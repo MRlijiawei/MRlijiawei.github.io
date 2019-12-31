@@ -21,7 +21,7 @@
   var CONFIG = {
     hostname: new URL('http://yoursite.com').hostname,
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '7.6.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
@@ -30,8 +30,8 @@
     bookmark: {"enable":true,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
-    lazyload: true,
-    pangu: true,
+    lazyload: false,
+    pangu: false,
     comments: {"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},
     algolia: {
       appID: '',
@@ -97,7 +97,7 @@
   </style>
 </noscript>
 
-  <link rel="stylesheet" type="text/css" href="https://files.cnblogs.com/files/ljwsyt/ljw.css">
+  <link rel="stylesheet" type="text/css" href="https://files.cnblogs.com/files/ljwsyt/hBlogs.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -107,11 +107,6 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-meta custom-logo">
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="/images/avatar.gif" alt="MrLi's Blog">
-        </a>
-      </div>
 
     <div>
       <a href="/" class="brand" rel="start">
@@ -145,11 +140,6 @@
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">0</span></a>
-
-  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
@@ -157,7 +147,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">1</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">2</span></a>
 
   </li>
   </ul>
@@ -191,13 +181,33 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 1 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
       </div>
 
       
     <div class="collection-year">
       <h1 class="collection-header">2019</h1>
     </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-31T16:58:02+08:00"
+              content="2019-12-31">
+          12-31
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2019/12/31/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/" itemprop="url">
+            <span itemprop="name">博客设置</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -212,7 +222,7 @@
 
       <h2 class="post-title">
           <a class="post-title-link" href="/2019/12/31/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
+            <span itemprop="name">Welcome</span>
           </a>
       </h2>
 
@@ -293,7 +303,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -334,7 +344,7 @@
     <footer class="footer">
       <div class="footer-inner">
         
-  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">null </a>
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">备案进行中 </a>
   </div>
 
 <div class="copyright">
@@ -382,8 +392,6 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
